@@ -1,0 +1,52 @@
+* {
+    font-family: Cozette;
+    color: #e5e9f0;
+    font-size: 20px;
+  }
+  
+  window {
+    background-image: linear-gradient(to right bottom, #060121, #090223, #0b0324, #0e0326, #100427);
+    /* border: 2px solid rgb(167, 140, 147); */
+    border-radius: 10px;
+  }
+  
+  #outer-box {
+    margin: 8px;
+  }
+  
+  #input {
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #29022c, #22042e, #1a052e, #12052f, #07052e);
+    margin: 7px;
+    /* box-shadow: none; Remove blue "border" */
+    box-shadow: 0px 0px 4px rgb(62, 7, 110);
+
+  }
+  
+  #inner-box {
+    /* background-image: linear-gradient(to right bottom, #8978ba, #645990, #423c69, #222143, #060121);; */
+    margin: 7px;
+    margin-top: 0;
+  }
+  
+  #entry {
+    padding-left: 5px;
+    border: none;
+    margin-left: -5px;
+    margin-right: -5px;
+    outline: none;
+  }
+  
+  #entry:selected {
+    background-image: linear-gradient(to right, #29022c, #22042e, #1a052e, #12052f, #07052e);
+  }
+  
+  #text {
+    margin: 2px;
+  }
+  
+  /* Hide backspace icon */
+  .right {
+    color: transparent;
+  }
