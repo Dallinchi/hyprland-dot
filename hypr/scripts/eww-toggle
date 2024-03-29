@@ -1,0 +1,14 @@
+#!/bin/bash
+
+## Files and cmd
+FILE="$HOME/.cache/eww_launch.bar"
+CFG="$HOME/.config/eww/bar"
+
+ 
+if [[ ! -f "$FILE" ]]; then
+	touch "$FILE"
+	~/.local/bin/eww --config "$CFG" open bar
+ else
+ 	~/.local/bin/eww --config "$CFG" close bar
+ 	rm "$FILE"
+ fi

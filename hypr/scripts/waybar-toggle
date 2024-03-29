@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Check if waybar is running
+if pgrep -x "waybar" > /dev/null
+then
+    # If it is running, kill the process
+    pkill waybar
+    echo "Waybar off"
+else
+    # If it: is not running, start the process
+    echo "Waybar on"
+    waybar &
+fi
