@@ -1,0 +1,17 @@
+
+[colors.primary]
+background = "#040012"
+foreground = "#c5c8c6"
+
+[font]
+size = 23.0
+
+[window]
+opacity = 0.4
+
+[window.padding]
+x = 40
+y = 30
+
+[general]
+import = ["/home/dallinchi/.config/alacritty/omni.toml"]

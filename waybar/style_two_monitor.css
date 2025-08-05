@@ -1,0 +1,217 @@
+   * {
+    border: none;
+    border-radius: 0;
+    font-family: Cartograph CF Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(20, 20, 20, 0);
+    color: #cdd6f4;
+    transition: .3s;
+}
+
+window#waybar.empty {
+    background: rgba(21, 18, 0, 0);
+    /* background: rgba(21, 18, 27, 0); */
+    border-radius: 20px;
+}
+
+
+window#waybar.solo {
+    background: rgba(11, 14, 20, 0.89);
+}
+
+window#waybar.floating {
+    background: rgba(11, 14, 20, 0);
+    /* border:5px solid red; */  
+    border-radius:0 0 10px 10px;
+  }
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #9c9c9c;
+    margin-right: 5px;
+    transition:0.2s;
+}
+
+#workspaces button.active {
+    color: #70e6e0;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: none; /* Убирает фоновый цвет */
+    border: none; /* Убирает рамку */
+    color:white;
+    box-shadow: none; /* Убирает тень */
+    text-shadow:none;
+  }
+
+#workspaces button:hover .icon {
+    color: red; /* Устанавливает цвет иконки в значение по умолчанию */
+    animation: none; /* Отключает анимацию */
+}
+#language,
+#custom-todo,
+#custom-pomodoro,
+#custom-player,
+#custom-caffeine,
+#custom-weather,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#wireplumber,
+#network,
+#workspaces,
+#tray,
+#backlight {
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.375);
+    padding: 0px 10px;
+    margin: 5px 0px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    color: #d2fffd;
+}
+
+#tray {
+    border-radius: 0 0 10px 10px;
+    margin-right: 10px;
+}
+#tray.passive {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+#workspaces {
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-player {
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#language {
+    border-left: 0px;
+    border-right: 0px;
+    min-width:18px;
+}
+
+#custom-todo {
+    margin-right: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#custom-pomodoro {
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#window {
+    border-radius: 0 0 10px 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 10px;
+    border-right: 0px;
+}
+
+#network {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio {
+    border-radius: 0px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#wireplumber {
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 10px;
+}
+
+#pulseaudio.microphone {
+    border-radius:0;
+}
+
+#battery {
+    border-radius: 0 0px 10px 0px;
+    margin-right: 10px;
+    border-left: 5px;
+}
+
+#custom-weather {
+    border-radius: 0px 10px 10px 0px;
+    border-right: 0px;
+    margin-left: 0px;
+} 
+
+
+window#waybar.empty #language,
+window#waybar.empty #custom-todo,
+window#waybar.empty #custom-player,
+window#waybar.empty #custom-pomodoro,
+window#waybar.empty #custom-caffeine,
+window#waybar.empty #custom-weather,
+window#waybar.empty #window,
+window#waybar.empty #clock,
+window#waybar.empty #battery,
+window#waybar.empty #pulseaudio,
+window#waybar.empty #wireplumber,
+window#waybar.empty #network,
+window#waybar.empty #workspaces,
+window#waybar.empty #tray,
+window#waybar.empty #backlight{
+    /* background: rgba(61, 61, 61, 0.96); */
+    /* color: #13e2d5; */
+    text-shadow: 0px 0px 1px rgb(4, 187, 187);
+}
+
+window#waybar.empty #window {
+    /* background: rgba(0,0,0,0); */
+}
+window#waybar.empty #workspaces button{
+    /* color: #adadad; */
+    text-shadow: 0px 0px 1px rgb(4, 187, 187);
+}
+
+window#waybar.empty #workspaces button.active {
+    color: #ffffff;
+}

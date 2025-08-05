@@ -1,0 +1,14 @@
+
+[colors.primary]
+background = "#0B0E14"
+foreground = "#c5c8c6"
+
+[font]
+size = 13.0
+
+[window.padding]
+x = 20
+y = 20
+
+[general]
+import = ["/home/dallinchi/.config/alacritty/gotham.toml"]

@@ -1,0 +1,10 @@
+mode=drun
+insensitive=true
+promt=">"
+width=35%
+height=85%
+hide_scroll=false
+location=4
+yoffset=5px
+monitor=eDP-1
+
